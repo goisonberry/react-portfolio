@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="blog-footer">
       <ul className="nav justify-content-center">
-        <li className="nav-item">
-          <a className="nav-link active" href="#">
-            About
-          </a>
+        <li className="nav-item active">
+          <Link to="/" className="nav-link">
+            About <span className="sr-only">(current)</span>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="assets/portfolio.html">
+          <Link to="/portfolio" className="nav-link">
             Portfolio
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <a
